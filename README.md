@@ -18,6 +18,7 @@ The main data processing code is stored in ```https://github.com/lilianatang/dat
 * Clean up and perform aggegration on raw employee data and store the processed data in ```employee_silver(location, headcount)``` Delta table
 * Clean up and perform aggegration on raw predicted safety incidents data and store the processed data in ```incident_silver(location, number_of_predicted_incidents)``` Delta table
 * Perform a RIGHT JOIN operation on ```employee_silver``` and ```incident_silver``` tables based on ```location``` to get golden records stored in ```employee_gold(location, headcount, number_of_predicted_incidents)``` for further descriptive analytics.
+
 ![HumanResourcesDashboard](https://github.com/lilianatang/databricks-for-construction/blob/main/HRDashboard.png?raw=true)
 
 ### Why This Solution Saves Your Data Team So Much Time
