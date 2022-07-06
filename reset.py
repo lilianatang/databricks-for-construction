@@ -25,6 +25,6 @@ dbutils.fs.rm("/tmp/delta/employee_gold", True)
 # MAGIC -- Create the employees_silver table.
 # MAGIC CREATE TABLE employee_silver USING DELTA LOCATION '/tmp/delta/employees_silver';
 # MAGIC -- Create the incident_silver table
-# MAGIC CREATE TABLE ncident_silver USING DELTA LOCATION '/tmp/delta/incidents_silver';
+# MAGIC CREATE TABLE incident_silver USING DELTA LOCATION '/tmp/delta/incidents_silver';
 # MAGIC -- Create the employee_gold table
 # MAGIC CREATE TABLE employee_gold USING DELTA LOCATION "/tmp/delta/employee_gold";
